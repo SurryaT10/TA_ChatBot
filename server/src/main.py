@@ -7,7 +7,7 @@ app = FastAPI()
 class ChatRequest(BaseModel):
     query: str
 
-@app.get("/chat")
+@app.post("/chat")
 async def chat(request: ChatRequest):
     chatbot = ChatBot()
     message = chatbot.chat(request.query)

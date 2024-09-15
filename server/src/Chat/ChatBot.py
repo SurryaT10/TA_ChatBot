@@ -15,7 +15,7 @@ class ChatBot:
                 {"role": "system", "content": os.getenv("SYSTEM_PROMPT")},
                 {"role": "user", "content": query}
             ],
-            max_tokens=50,
+            max_tokens=1800,
             temperature=0.3,
         )
         
