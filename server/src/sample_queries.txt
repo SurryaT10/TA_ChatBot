@@ -1,0 +1,51 @@
+I’ve already taken Dynamics. Should I take Kinematics or Systems Dynamics next?
+How critical is it to take an introductory course in Computational Fluid Dynamics (CFD)? 
+I finished Engineering Materials. Should I take Strength of Materials next or Fluid Mechanics?
+Can I take HVAC as an elective, or is there a strict prerequisite?
+Should I prioritize courses in Finite Element Analysis (FEA) if I’m considering a career in structural engineering?
+I’ve taken all my core mechanical courses. Can I start focusing on project-based or capstone design courses?
+Can I take Thermodynamics and Heat Transfer in the same semester?
+Can I take Intermediate CAD courses without taking any CAD courses?
+I took Calculus 2 last semester. Should I take Differential Equations or Linear Algebra next?
+What are the prerequisites for Fluid Mechanics? Can I take it this semester?
+I completed Statics last semester. Should I take Dynamics or Mechanics of Materials next?
+Is it better to take Thermodynamics 1 before Heat Transfer, or can I take them together?
+Do I need to complete Chemistry before I can take Materials Science?
+What programming courses are recommended for mechanical engineering students?
+I’ve already taken Physics 1 and Calculus 3. What higher-level courses should I take next?
+Can I take an elective in renewable energy systems as part of my core curriculum?
+I’m interested in mechatronics. What courses should I prioritize to prepare for this field?
+Is it possible to take Fluid Mechanics and Heat Transfer in the same semester, or will that be too difficult?
+I’ve finished all my math and basic science requirements. What should I focus on next to stay on track?
+How important is it to take a CAD (Computer-Aided Design) course early in my degree?
+I want to specialize in aerospace engineering. What electives should I consider?
+Can I do an internship next semester, or should I focus on completing core courses first?
+How many technical electives should I plan for in my final semesters?
+Is it recommended to take lab courses alongside theory courses, or should I spread them out?
+I’m planning on studying abroad. Which courses are crucial to take before I go?
+I already took Calculus 01 – what can I take next semester?
+I already took General Chemistry 01 – what can I take next semester?
+I already took General Chemistry 01 and Calculus 01 – can I take Calculus 3 next semester?
+I took Thermodynamics and Dynamics last semester – what can I take next semester?
+I already took Physics 01 and General Chemistry 01 – what should I take next semester?
+I already took Calculus 03 – can I take ODE (Ordinary Differential Equation)?
+I already took Thermodynamics and Statics and Engineering Materials – what can I take next semester?
+I want to take Fluid Mechanics – what do I need to take before that?
+Can I take Thermo System Design next semester? I did not take Calculus 02 yet.
+I took Calculus 3 last semester – what should I take next semester?
+What are the prerequisites for taking Heat Transfer?"
+I want to take Fluid Mechanics, but I haven’t completed Thermodynamics yet. Is that okay?"
+Do I need to complete Differential Equations before I can take System Dynamics?"
+Is it necessary to take Statics before enrolling in Strength of Materials?"
+Can I take Intro to Finite Element Analysis without completing Dynamics?"
+I want to take Mechanics of Materials. Do I need to finish Dynamics first?"
+Is a programming course like MATLAB or Python a prerequisite for Numerical Methods in Mechanical Engineering?"
+Are there any prerequisite lab courses required before taking Thermodynamics 2?"
+Do I need to complete both Statics and Dynamics before taking Mechanical Vibrations?"
+What’s the prerequisite sequence for taking Engineering Materials or Materials Science?"
+Is a course in Engineering Analysis a prerequisite for Finite Element Analysis (FEA)?"
+Can I take CAD/Design courses without completing Engineering Drawing first?"
+Do I need to complete introductory Physics before I can take Dynamics?"
+Is Calculus 3 required before enrolling in Fluid Mechanics?"
+Do I need to complete all core math courses before taking Applied Thermodynamics?"
+Can I take Engineering Ethics as an elective without any prerequisite requirements?"
