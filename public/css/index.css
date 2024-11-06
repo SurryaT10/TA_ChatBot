@@ -5,10 +5,6 @@
     font-family: Roboto, Helvetica, Arial, sans-serif !important;
 }
 
-body {
-    overflow: hidden;
-}
-
 .nav-bar {
     height: 80px;
     width: 100%;
@@ -61,7 +57,7 @@ main {
     padding-bottom: 5px !important;
     border: none;
     border-bottom: 1px solid gray;
-    box-sizing: content-box !important;
+    box-sizing: border-box !important;
     background: none !important;
     margin: 0px !important;
     -webkit-tap-highlight-color: transparent !important;
@@ -70,6 +66,7 @@ main {
     animation-name: mui-auto-fill-cancel !important;
     animation-duration: 10ms !important;
     resize: none !important;
+    overflow: hidden;
 }
 
 .query-box:hover {
@@ -90,8 +87,7 @@ main {
     display: flex;
     align-items: center;
     position: fixed;
-    top: 90%;
-
+    top: 85%;
 }
 
 .send-btn {

@@ -94,5 +94,19 @@ document.addEventListener('DOMContentLoaded', () => {
         if (event.key === "Enter" && !event.shiftKey) {
           getMessage(event);
         }
-      });
+    });
+
+    // Resizable textarea based on the content
+    const textarea = document.getElementById('query');
+
+      const autoResize = () => {
+        textarea.style.height = '23px';  // Reset to default height
+        textarea.style.height = `${textarea.scrollHeight}px`;  // Set to scrollHeight to show content
+      };
+
+      // Attach autoResize to the input event to adjust on content change
+      textarea.addEventListener('input', autoResize);
+
+      // Initial call to autoResize in case there's pre-filled content
+      autoResize();
 });
