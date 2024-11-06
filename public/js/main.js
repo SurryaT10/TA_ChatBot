@@ -23,9 +23,8 @@ function getMessage(e) {
         return response.json();
     })
     .then(data => {
-        console.log(data.message);
         try {
-            const query = JSON.parse(data.message).message;
+            const query = JSON.parse(data.message);
             addMessage(query);
         } catch (e) {
             addMessage(data.message);
@@ -36,7 +35,8 @@ function getMessage(e) {
     });
 }
 
-function addMessage(message, isBot = true) {
+function addMessage(data, isBot = true) {
+    console.log(data);
     // Get the messages container
     const messagesContainer = document.getElementById('messages');
 
@@ -44,22 +44,31 @@ function addMessage(message, isBot = true) {
     const messageDiv = document.createElement('div');
     messageDiv.classList.add('message');
 
-    if (!isBot) {
-        messageDiv.innerHTML = `
-        <div>
-            <p>${message}</p>
-        </div>
-    `;
-    } else {
-        messageDiv.innerHTML = `
-        <div>
-            <img src="../images/hugo.png" alt="hugo-image" id="hugo-img">
-        </div>
-        <div>
-            <p>${message}</p>
-        </div>
-    `;
+    let suggestedCourses = '';
+    if (data.suggested_courses?.length > 0) {
+        suggestedCourses += '<dl>';
+        for (let i = 0; i < data.suggested_courses.length; i++) {
+            suggestedCourses += `
+                <dt>
+                    ${data.suggested_courses[i].course}
+                </dt>
+                <dd>
+                    ${data.suggested_courses[i].reason}
+                </dd>`;
+        }
+        suggestedCourses += '</dl>';
     }
+
+    let message = isBot ? `<div>
+            <img src="../images/hugo.png" alt="hugo-image" id="hugo-img">
+        </div>` : '';
+
+    message += `<div>
+            <p>${data.message ?? data}</p>
+            ${suggestedCourses}
+        </div>`;
+
+    messageDiv.innerHTML = message;
 
     // Append the new message to the container
     messagesContainer.appendChild(messageDiv);
@@ -69,13 +78,21 @@ function addMessage(message, isBot = true) {
     messagesContainer.scrollTop = messagesContainer.scrollHeight;
 
     messages.push({
-        message,
+        message: data,
         person: isBot ? 'MechHugo' : 'Student'
     });
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    // query form on submit
+    // query form on submit by clicking on the send icon
     const queryForm = document.getElementById('chat-form');
     queryForm.addEventListener('submit', getMessage);
+
+    // query form on submit by pressing enter key
+    document.getElementById("query").addEventListener("keydown", function(event) {
+        // Check if the Enter key is pressed without the Shift key
+        if (event.key === "Enter" && !event.shiftKey) {
+          getMessage(event);
+        }
+      });
 });
