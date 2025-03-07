@@ -83,30 +83,40 @@ function addMessage(data, isBot = true) {
     });
 }
 
-document.addEventListener('DOMContentLoaded', () => {
+function submitMessage() {
     // query form on submit by clicking on the send icon
     const queryForm = document.getElementById('chat-form');
     queryForm.addEventListener('submit', getMessage);
+}
 
+function keyboardSubmit() {
     // query form on submit by pressing enter key
     document.getElementById("query").addEventListener("keydown", function(event) {
         // Check if the Enter key is pressed without the Shift key
         if (event.key === "Enter" && !event.shiftKey) {
-          getMessage(event);
+        getMessage(event);
         }
     });
+}
 
+function resizeMessageBar() {
     // Resizable textarea based on the content
     const textarea = document.getElementById('query');
 
-      const autoResize = () => {
-        textarea.style.height = '23px';  // Reset to default height
-        textarea.style.height = `${textarea.scrollHeight}px`;  // Set to scrollHeight to show content
-      };
+    const autoResize = () => {
+    textarea.style.height = '23px';  // Reset to default height
+    textarea.style.height = `${textarea.scrollHeight}px`;  // Set to scrollHeight to show content
+    };
 
-      // Attach autoResize to the input event to adjust on content change
-      textarea.addEventListener('input', autoResize);
+    // Attach autoResize to the input event to adjust on content change
+    textarea.addEventListener('input', autoResize);
 
-      // Initial call to autoResize in case there's pre-filled content
-      autoResize();
+    // Initial call to autoResize in case there's pre-filled content
+    autoResize();
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    submitMessage();
+    keyboardSubmit();
+    resizeMessageBar();
 });
